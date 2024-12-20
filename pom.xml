@@ -1,0 +1,14 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>com.slytechs.jnet.platform</groupId>
+		<artifactId>platform-sdk-parent</artifactId>
+		<version>0.1.0-SNAPSHOT</version>
+		<relativePath>../jnet-platform</relativePath>
+	</parent>
+	<artifactId>platform-examples</artifactId>
+	<name>jNet Platform Examples</name>
+	<description>Various examples of platform-sdk usage</description>
+</project>
