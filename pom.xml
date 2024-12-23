@@ -5,9 +5,9 @@
 	
 	<parent>
 		<groupId>com.slytechs.jnet.platform</groupId>
-		<artifactId>platform-parent</artifactId>
+		<artifactId>platform-sdk-parent</artifactId>
 		<version>0.1.0-SNAPSHOT</version>
-		<relativePath>../platform</relativePath>
+		<relativePath>../platform-sdk</relativePath>
 	</parent>
 	
 	<artifactId>platform-examples</artifactId>
