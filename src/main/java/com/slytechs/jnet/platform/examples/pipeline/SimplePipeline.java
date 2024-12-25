@@ -18,8 +18,9 @@ package com.slytechs.jnet.platform.examples.pipeline;
 import java.util.function.Consumer;
 import java.util.function.Supplier;
 
-import com.slytechs.jnet.platform.api.pipeline.DataLiteral;
-import com.slytechs.jnet.platform.api.pipeline.Pipeline;
+import com.slytechs.jnet.platform.api.data.DataLiteral;
+import com.slytechs.jnet.platform.api.data.pipeline.Pipeline;
+import com.slytechs.jnet.platform.api.util.Detail;
 import com.slytechs.jnet.platform.examples.pipeline.SimplePipeline.SimpleProcessor;
 
 /**
@@ -161,7 +162,7 @@ public class SimplePipeline extends Pipeline<SimpleProcessor> {
 	public static void main(String[] args) {
 		var pipeline = new SimplePipeline();
 
-		System.out.println(pipeline.toStringInOut());
+		System.out.println(pipeline.toString(Detail.HIGH));
 
 		// Connect SimpleOutput as lambda
 		pipeline.out("SimpleOutput", (SimpleOutput) result -> System.out.printf("out=%s%n", result));
